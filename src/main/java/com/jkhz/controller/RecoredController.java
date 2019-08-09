@@ -54,7 +54,7 @@ public class RecoredController {
     @CrossOrigin
     public List<GTExamRecordwors> selectworall(Requestbodywor wor){
         String wors=wor.getWor().substring(0,wor.getWor().length()-1);
-        List<GTExamRecordwors> findworall = gtExamRecordMapper.findworall(wor.getWor(),wors);
+        List<GTExamRecordwors> findworall = gtExamRecordMapper.findworall(wors);
         return findworall;
     }
 }
